@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фото дня</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .photo-info {
+        margin-top: 20px;
+      }
+      .like-button {
+        background-color: #008cba;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .like-button:hover {
+        background-color: #005f6b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Фото дня</h1>
+    <img id="photo" src="" alt="Photo of the day" />
+    <div class="photo-info">
+      <p>Фотография<span id="photographer"></span></p>
+      <button id="likeButton" class="like-button">
+        Лайкнуть <span id="likeCount">0</span>
+      </button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
